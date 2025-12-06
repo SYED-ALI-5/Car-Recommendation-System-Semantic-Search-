@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000000 0%, #878787 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(to right, #000000, #878787);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 1.0rem;
+    opacity: 0.9;
+}
+
+.content {
+    padding: 24px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+    font-size: 1.05rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e1e5ee;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: vertical;
+    min-height: 120px;
+    transition: all .3s;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #000000, #878787);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(58, 58, 58, 0.7);
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.spinner {
+    border: 5px solid #878787;
+    border-top: 5px solid #000000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 10px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    display: none;
+}
+
+.source-row {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.source-row:last-child {
+    border-bottom: none;
+}
+
+.small {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer {
+    text-align: center;
+    padding: 18px;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

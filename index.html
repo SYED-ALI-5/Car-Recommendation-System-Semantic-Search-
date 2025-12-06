@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Search — Semantic Retriever</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-car"></i> Car Finder (Semantic)</h1>
+            <p>Search cars using normal language. Examples: "SUV 2020 under 30 lakh" or "sedan 2018-2020 low mileage"
+            </p>
+        </div>
+
+        <div class="content">
+            <form id="search-form">
+                <div class="input-group">
+                    <label for="user_input"><i class="fas fa-search"></i> Enter your query:</label>
+                    <textarea id="user_input" name="user_input"
+                        placeholder="e.g., SUVs from 2018 to 2020 under 50,000 km"></textarea>
+                </div>
+
+                <button id="submit-btn" class="btn" type="submit"><i class="fas fa-paper-plane"></i> Search
+                    Cars</button>
+            </form>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Searching... this may take a few seconds</p>
+            </div>
+
+            <div id="error"
+                style="display:none;margin-top:16px;padding:12px;background:rgba(244,67,54,0.08);border:1px solid rgba(244,67,54,0.18);color:#c62828;border-radius:8px;">
+            </div>
+
+            <div class="result" id="result">
+                <h3>Assistant Answer</h3>
+                <div id="answer" class="small" style="margin-bottom:12px;"></div>
+
+                <h4>Matching Cars</h4>
+                <div id="sources"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Ali — NLP Project • Instructor: Dr. Rao Adeel</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
