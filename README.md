@@ -66,7 +66,7 @@ Ask anything like:
 
 ### Credits
 
-Built by Ali
+Built by Syed Ahmad Ali
 
 Semester NLP Project
 
