@@ -30,7 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData();
             formData.append('user_input', text);
 
-            const resp = await fetch('/query', { method: 'POST', body: formData });
+            const resp = await fetch('https://difficulties-claimed-session-bargains.trycloudflare.com/query', {
+                method: 'POST',
+                headers: {
+                    "X-API-KEY": "ali12345" 
+                },
+                body: formData
+            })
+
             if (!resp.ok) {
                 const err = await resp.text();
                 throw new Error(err || 'Server error');
